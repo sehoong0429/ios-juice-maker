@@ -4,14 +4,12 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-import Foundation
-
-// 과일 저장소 타입
 class FruitStore {
+    static let shared = FruitStore()
     
     var fruitStock: [Fruit: Int]
     // TODO: self 쓸지 고민해보기
-    init() {
+    private init() {
         fruitStock = [
             .strawberry: 10,
             .banana: 10,
@@ -37,7 +35,7 @@ class FruitStore {
         guard let nowStock = fruitStock[fruit], nowStock >= quantity else {
             return
         }
-        
+
         fruitStock[fruit] = nowStock - quantity
     }
 }

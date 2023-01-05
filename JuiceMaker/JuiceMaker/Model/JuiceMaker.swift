@@ -4,9 +4,16 @@
 //  Copyright © yagom academy. All rights reserved.
 // 
 
-import Foundation
-
-// 쥬스 메이커 타입
 struct JuiceMaker {
+    let fruitStore = FruitStore.shared
     
+    func makeJuice(by juice: Juice) {
+        for (fruit, quantity) in juice.recipe {
+            guard let fruitStock = fruitStore.fruitStock[fruit], fruitStock >= quantity else {
+                return
+            }
+            
+            fruitStore.subtractFruitStock(of: fruit, quantity: quantity)
+        }
+    }
 }
