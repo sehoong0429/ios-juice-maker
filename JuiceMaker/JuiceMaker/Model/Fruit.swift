@@ -2,7 +2,7 @@
 //  Fruit.swift
 //  JuiceMaker
 //
-//  Created by Harry on 2023/01/05.
+//  Created by Harry, Sehong on 2023/01/05.
 //
 
 enum Fruit {
