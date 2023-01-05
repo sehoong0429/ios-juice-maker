@@ -10,7 +10,7 @@ import Foundation
 class FruitStore {
     
     var fruitStock: [Fruit: Int]
-    
+    // TODO: self 쓸지 고민해보기
     init() {
         fruitStock = [
             .strawberry: 10,
@@ -19,5 +19,17 @@ class FruitStore {
             .kiwi: 10,
             .mango: 10
         ]
+    }
+    
+    func updateFruitStock(of fruit: Fruit, quantity: Int) {
+        guard let _ = fruitStock[fruit] else {
+            return
+        }
+        
+        guard quantity >= 0 else {
+            return
+        }
+        
+        fruitStock[fruit] = quantity
     }
 }
