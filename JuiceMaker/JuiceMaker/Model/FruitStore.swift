@@ -20,8 +20,8 @@ class FruitStore {
             .mango: 10
         ]
     }
-    
-    func updateFruitStock(of fruit: Fruit, quantity: Int) {
+    // TODO: 아규먼트 레이블 호출부에서 사용할때 어색한 부분 없는지 체크
+    func updateFruitStock(of fruit: Fruit, for quantity: Int) {
         guard let _ = fruitStock[fruit] else {
             return
         }
@@ -31,5 +31,13 @@ class FruitStore {
         }
         
         fruitStock[fruit] = quantity
+    }
+    
+    func subtractFruitStock(of fruit: Fruit, quantity: Int) {
+        guard let nowStock = fruitStock[fruit], nowStock >= quantity else {
+            return
+        }
+        
+        fruitStock[fruit] = nowStock - quantity
     }
 }
