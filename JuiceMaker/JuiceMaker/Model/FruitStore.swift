@@ -23,6 +23,11 @@ class FruitStore {
         print(fruitStock)
     }
     
+    func getStockValue(fruit: Fruit) -> String {
+        guard let value = fruitStock[fruit] else { return "" }
+        return String(value)
+    }
+    
     // TODO: 아규먼트 레이블 호출부에서 사용할때 어색한 부분 없는지 체크
     func updateFruitStock(of fruit: Fruit, for quantity: Int) {
         guard let _ = fruitStock[fruit] else {

@@ -16,11 +16,19 @@ class JuiceMakerViewController: UIViewController {
     @IBOutlet weak var kiwiButton: MyButton!
     @IBOutlet weak var mangoButton: MyButton!
     
+    @IBOutlet weak var strawberryStock: UILabel!
+    @IBOutlet weak var bananaStock: UILabel!
+    @IBOutlet weak var pineAppleStock: UILabel!
+    @IBOutlet weak var kiwiStock: UILabel!
+    @IBOutlet weak var mangoStock: UILabel!
+    
     let juiceMaker = JuiceMaker()
+    let fruitStock = FruitStore.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setJuiceType()
+        updateFruitLabels()
     }
     
     @IBAction func editStockTapped(_ sender: UIBarButtonItem) {
@@ -42,6 +50,7 @@ class JuiceMakerViewController: UIViewController {
         } catch { }
         
         successAlert(sender)
+        updateFruitLabels()
     }
     
     func setJuiceType() {
@@ -79,6 +88,14 @@ class JuiceMakerViewController: UIViewController {
         alert.addAction(cancel)
         
         present(alert, animated: true)
+    }
+    
+    func updateFruitLabels() {
+        strawberryStock.text = fruitStock.getStockValue(fruit: .strawberry)
+        bananaStock.text = fruitStock.getStockValue(fruit: .banana)
+        pineAppleStock.text = fruitStock.getStockValue(fruit: .pineapple)
+        kiwiStock.text = fruitStock.getStockValue(fruit: .kiwi)
+        mangoStock.text = fruitStock.getStockValue(fruit: .mango)
     }
     
 }

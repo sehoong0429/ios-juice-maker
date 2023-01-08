@@ -244,12 +244,17 @@
                     </navigationItem>
                     <connections>
                         <outlet property="bananaButton" destination="y2A-PH-DJY" id="NPK-dO-PMe"/>
+                        <outlet property="bananaStock" destination="gvk-pA-Lw5" id="7fC-Zl-XbI"/>
                         <outlet property="kiwiButton" destination="wcW-7H-RXw" id="Uzb-py-QNt"/>
+                        <outlet property="kiwiStock" destination="FZq-de-TJG" id="AnW-8W-sFJ"/>
                         <outlet property="magoKiwiButton" destination="ngP-kF-Yii" id="Hyn-Bm-3cV"/>
                         <outlet property="mangoButton" destination="q6G-4X-bVm" id="8aB-pc-trA"/>
+                        <outlet property="mangoStock" destination="3Ce-SU-JeH" id="Mqy-ng-ETj"/>
+                        <outlet property="pineAppleStock" destination="ccQ-Dk-PuY" id="icd-5k-3AP"/>
                         <outlet property="pineappleButton" destination="BFb-ka-wGA" id="Y9m-El-G4P"/>
                         <outlet property="strawberryBananaButton" destination="hrc-2F-fzl" id="nMo-2y-P2F"/>
                         <outlet property="strawberryButton" destination="avd-o5-3JM" id="C4Q-On-7i6"/>
+                        <outlet property="strawberryStock" destination="Qas-vP-td6" id="79d-Tj-GM8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
