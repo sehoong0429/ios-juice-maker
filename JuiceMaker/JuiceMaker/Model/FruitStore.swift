@@ -12,10 +12,6 @@ class FruitStore {
     
     // TODO: self 쓸지 고민해보기 -> 해결
     private init() {
-        //순서대로적으라고.. 딕셔너리는 순서가있을까요
-        
-        //배열이있어. 딕셔너리가있어..근데 뭔가 둘이 비슷해
-        //하지만 달라.. 근데 잘하면 뭔가 둘이 형태를 바꿀수잇지않을까..?
         fruitStock = [
             .strawberry: 10,
             .banana: 10,
