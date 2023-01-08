@@ -5,14 +5,14 @@
 //  Created by Harry, Sehong on 2023/01/05.
 //
 
-enum Juice {
-    case strawberryJuice
-    case bananaJuice
-    case kiwiJuice
-    case pineappleJuice
-    case strawberryBananaJuice
-    case mangoJuice
-    case mangoKiwiJuice
+enum Juice: String {
+    case strawberryJuice = "딸기"
+    case bananaJuice = "바나나"
+    case kiwiJuice = "키위"
+    case pineappleJuice = "파인애플"
+    case strawberryBananaJuice = "딸바"
+    case mangoJuice = "망고"
+    case mangoKiwiJuice = "망키"
     
     var recipe: [Fruit: Int] {
         switch self {
