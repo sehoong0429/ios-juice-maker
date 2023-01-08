@@ -7,10 +7,10 @@
 struct JuiceMaker {
     let fruitStore = FruitStore.shared
     
-    func makeJuice(by juice: Juice) {
+    func makeJuice(by juice: Juice) throws {
         for (fruit, quantity) in juice.recipe {
             guard let fruitStock = fruitStore.fruitStock[fruit], fruitStock >= quantity else {
-                return
+                throw JuiceMakerError.outOfStock
             }
             
             fruitStore.subtractFruitStock(of: fruit, quantity: quantity)
