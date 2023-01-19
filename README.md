@@ -56,7 +56,8 @@
 <br/>
 
 ## 4. 프로젝트 구조
-~~2주차 추가 예정~~
+![juicemaker (1)](https://user-images.githubusercontent.com/88870642/213369986-6cd43a9c-8227-498d-95ae-cb917d8d1c9f.jpg)
+
 <br/>
 
 ## 5. 실행 화면(기능 설명)

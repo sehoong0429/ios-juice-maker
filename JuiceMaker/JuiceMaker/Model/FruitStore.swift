@@ -19,12 +19,6 @@ class FruitStore {
         }
     }
     
-    func addStock(of fruit: Fruits, count number: Int) {
-        if let selectedStock = fruitsStock[fruit] {
-            fruitsStock[fruit] = selectedStock + number
-        }
-    }
-    
     func isEnoughStock(of fruit: Fruits, count number: Int) -> Bool {
         guard let selectedStock = fruitsStock[fruit],
               selectedStock - number >= 0 else {
