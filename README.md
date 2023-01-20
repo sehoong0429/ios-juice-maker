@@ -540,7 +540,7 @@ private func moveToChangeStockViewController() {
 ```
     
 </details>
-
+<br/>
 
 ## 7. 참고 링크
 - [Nested Type - Swift Language Guide](https://docs.swift.org/swift-book/LanguageGuide/NestedTypes.html)
@@ -552,7 +552,7 @@ private func moveToChangeStockViewController() {
 <br/>
 
 ## 8. 팀 회고
-[팀 회고 링크](https://github.com/Kyeongjun2/ios-juice-maker/blob/step03/%ED%8C%80%ED%9A%8C%EA%B3%A0.md)
+- [팀 회고 링크](https://github.com/Kyeongjun2/ios-juice-maker/blob/step03/%ED%8C%80%ED%9A%8C%EA%B3%A0.md)
 
 
 
