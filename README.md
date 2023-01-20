@@ -8,6 +8,7 @@
 5. [실행화면(기능 설명)](#5-실행-화면기능-설명)
 6. [트러블슈팅](#6-트러블-슈팅)
 7. [참고링크](#7-참고-링크)
+8. [팀 회고](#8-팀-회고)
 
 <br/>
 
@@ -550,7 +551,8 @@ private func moveToChangeStockViewController() {
 - [Protocol - Swift Laguage Guide](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html)
 <br/>
 
-
+## 8. 팀 회고
+[팀 회고 링크](https://github.com/Kyeongjun2/ios-juice-maker/blob/step03/%ED%8C%80%ED%9A%8C%EA%B3%A0.md)
 
 
 
