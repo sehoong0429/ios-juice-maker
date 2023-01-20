@@ -65,10 +65,10 @@
         
     - **AutoLayout으로 뷰 설정**
          AutoLayout을 이용하여 ChangeStockViewController 화면 구현
-<br/>
-        > * StackView를 활용하여, 과일 image, 과일재고 label, stepper 위치 조정
-        > * NavigationBar를 활용하여, title 생성 및 dismissButton 생성
->
+         <br/>
+         > * StackView를 활용하여, 과일 image, 과일재고 label, stepper 위치 조정
+         > * NavigationBar를 활용하여, title 생성 및 dismissButton 생성
+         
 <br/>
 
 
